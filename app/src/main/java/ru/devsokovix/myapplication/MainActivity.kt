@@ -1,6 +1,8 @@
 package ru.devsokovix.myapplication
 
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun onClickToast(view: View){
+        Toast.makeText(this, "Я буду Android разработчиком", Toast.LENGTH_LONG).show()
     }
 }
